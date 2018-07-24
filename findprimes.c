@@ -24,7 +24,7 @@ void findprimes(int x, int y)
     int testee=0, counter=0;
     char filename[30];
     FILE * outputFile;
-    sprintf(filename, "prime_%d_%d.txt", x, y);
+    sprintf(filename, "prime_%d-\%d.txt", x, y);
     outputFile = fopen(filename, "w");
     fprintf(outputFile, "Prime Numbers from %d to %d:\n", x, y);
     for (testee=x; testee<=y; testee++)
